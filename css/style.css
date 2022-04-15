@@ -1,0 +1,342 @@
+/* ----css reset----- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+   overflow-x: hidden;
+  
+}
+
+
+.bd-container {
+  max-width: 80vw;
+  margin: auto;
+}
+
+hr {
+  margin-top: 7px;
+}
+
+/* --------NAVIGATION--------- */
+
+.navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: space-between;
+
+  /* background-color:#ffe4c494; */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------NAVIGATION- LoGO-------- */
+
+.logo {
+  margin: 15px 22px;
+  padding: 15px 10px;
+  font-size: 29px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.logo span {
+  background-color: #61e261a1;
+  border-radius: 11%;
+  padding: 0 3px;
+}
+
+/* --------NAVIGATION-LIST-------- */
+
+.nav-list {
+  display: flex;
+  padding: 0px 50px;
+  margin: 0px 50px;
+}
+
+.nav-list li {
+  list-style: none;
+
+}
+
+.nav-list li a {
+  color: black;
+  text-decoration: none;
+  margin: 0px;
+  padding: 15px;
+  font-size: 1.22rem;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+}
+
+.nav-list li a::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px ;
+  bottom: 0%;
+  left: 0%;
+  background: black;
+  transform: scale(0,1);
+  transition: all .5s ease-out;
+ 
+}
+.nav-list li a:hover::after{
+  transform: scale(1,1);
+  color: #962c2c;
+}
+
+.nav-list li a:hover {
+  color:  #962c2c;
+
+} 
+
+/* --------NAVIGATION-INPUT-------- */
+
+/* .nav-right input {
+  padding: 3px 17px;
+  margin-right: 8px;
+  font-size: 17px;
+  border: 2px solid black;
+  border-radius: 7px;
+} */
+
+.nav-right{
+  border: 2px solid black;
+  padding: 3px 3px;
+  border-radius: 8px;
+  margin: 10px 31px;
+  align-items: center;
+}
+  
+
+
+
+.nav-right input{ 
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding: 0px 26px;
+  font-weight: 300;
+  margin: 6px 0px;
+}
+
+
+.home-section {
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-section img{
+  height : 650px;
+   width : 1519px;
+}
+.home-subtitle {
+  position: absolute;
+  top: 28%;
+  left: 43%;
+  font-size: 66px;
+  color: #77081d;
+}
+
+.home-title {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  font-size: 45px;
+  color: black;
+}
+
+/* -------PRODUCT-SECTION------- */
+
+.product-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.Group-item {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.tab {
+  padding: 20px;
+  margin: 40px;
+  border: 2px solid black;
+  border-radius: 30px;
+  transition: all 1s ease-in-out;
+}
+.tab:hover {
+  background-color: #dcf7a3;
+}
+
+/* -------CARDS-START----- */
+.card-heading h1 {
+  padding: 7px 10px;
+  margin: 74px 6px;
+  border-radius: 10px;
+  background-color: #adc6981a;
+}
+.cards {
+  display: flex;
+  margin-top: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 168px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0px 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-item img {
+  width: 155px;
+  padding: 7px 8px;
+}
+
+/* -------CARDS-END------- */
+
+/*-------- ABOUT-SECTION -START--------- */
+.About-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.content-left {
+  width: 50%;
+}
+.content-left h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.content-left p {
+  font-size: 17px;
+  margin-top: 5%;
+}
+.content-right {
+  margin-left: 5%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-right img {
+  
+  height: 405px;
+}
+
+/*-------- ABOUT-SECTION- END--------- */
+
+/*-------- CONTACT-SECTION- START--------- */
+.contact-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+}
+.contact-boxes {
+  display: flex;
+  justify-content: center;
+  column-gap: 8%;
+}
+.contact-box {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 3%;
+  margin-top: 4%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contact-content p {
+  font-size: 19px;
+}
+
+/* ------CONTACT-FORM----- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 7%;
+  padding: 38px 0px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* .form-group {
+  margin-top: 2%;
+} */
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .form-group label {
+  font-weight: bold;
+  font-size: 23px;
+} */
+
+.form-group label{
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+  top: 3rem;
+  right: 13rem;
+}
+
+.form-group input{
+  border: 1px solid black;
+  padding: 10px 57px;
+  margin: 10px 3px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+/*-------- CONTACT-SECTION- END--------- */
+
+/*-------- FOOTER-SECTION-START--------- */
+.footer-section{
+  margin-top: 1%;
+  background-color: #0f0f0f;
+  color: rgb(248, 233, 233);
+  padding: 5px 415px;
+  border: 1px solid black;
+}
+
+/*-------- FOOTER-SECTION-END--------- */
